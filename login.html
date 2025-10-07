@@ -1,25 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width, initial-scale=1.0">
-    <form><!--siempre iniciamos la  etiqueta de from -->
-<p><!--creamos una linea de parrafo -->
-<label for="indentificacion">tu indentificacion:</label><!--creamos el label que  ira  antes de la caja de texto-->
-<input type="text"id ="indentificacion"name="indentificacion"><!--crea la caja de texto -->
-</p><!--cerramos el parrafo-->
-<p><!--abrimos otro parrafo-->
-    <label for="password">tu contraseña:</label>
-    <input type="password"id="password" name="password">
-    </p> 
- <p>
- <button type="submit">ingresar/login</button>
- </p>  
- 
-</form> 
-<button onclick="window.location.href='tarea.html'">regresar</button>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Comentarios</title>
+    <style>
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: #2dff03;
+        }
+        .regresar {
+            background-color:blue;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .regresar:hover {
+            background-color: #9eff01;
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    
+    <form onsubmit="enviarComentario(event)">
+        <p>
+            <label for="comentario">Tu comentario:</label>
+            <textarea id="comentario" name="comentario" placeholder="Escribe aquí tu comentario..." required></textarea>
+        </p>
+        <p>
+            <button type="submit">Enviar comentario</button>
+        </p>
+    </form>
+    <button class="regresar" onclick="window.location.href='tarea.html'">Regresar</button>
 </body>
 </html>
+

@@ -4,41 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabores del mundo</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: lightgray;
+        }
+
+        button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: rgb(157, 251, 6);
+            color: white;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 10px auto;
+            max-width: 90%;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: center;
+            background-color: #111;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid #444;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #222;
+        }
+
+        tr:hover {
+            background-color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #111;
+            margin-top: 20px;
+            color: white;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
+<body>
+    <h1>TOP DE LOS 3 MEJORES RESTAURANTES</h1>
+    <div style="text-align: center;">
+        <button onclick="window.location.href='login.html'">formulario</button>
+    </div>
 
     
-<h1>TOP DE LOS 3 MEJORES RESTAURANTES </h1>
-<body>
-    <button onclick="window.location.href='login.html'">loguearte</button>
-    <a href="#">Resrtaurantes</a> | <a href="#">receta</a> | <a href="#">Contactos</a>
-<h1>Estos son los Restaurantes  </h1>
-<p>Maido- de la cuidad de Lima Peru</p>
-<p>Asador Etxebarri- de la cuidad de España</p>   
-<p>Quintonil- de la cuidad de Mexico</p>
-<h1>Recetas de los Resrtaurantes </h1>
-<h1>Maido</h1>
-<ul> 
-  <li>Asado de tira (short rib de res), suficiente para 4 porciones (unos 1.2-1.5 kg)</li>
-  <li>Sal y pimienta al gusto</li>
-  <li>Ajo (varios dientes, machacados)</li>
-  <li>Cebolla picada fina</li>
-  <li>Shoyu (salsa de soja)</li>
-  <li>Mirin</li>
-  <li>Sake</li>
-  <li>Caldo de res (o agua con hueso de res)</li>
-  <li>Azúcar moreno o miel (opcional, para balancear lo dulce en el glaseado)</li>
-  <li>Aceite vegetal</li>
-   </ul>
-  <img src="descarga.jpg" >  
-  <h1>Asado Extxebarri</h1>
-  <ul> 
+    <nav>
+        <a href="#restaurantes">Restaurantes</a> | 
+        <a href="#recetas">Recetas</a> | 
+        <a href="#contactos">Contactos</a>
+    </nav>
+
+    
+    <h1 id="restaurantes">Estos son los Restaurantes</h1>
+    <p>Maido - de la ciudad de Lima, Perú</p>
+    <p>Asador Etxebarri - de la ciudad de España</p>   
+    <p>Quintonil - de la ciudad de México</p>
+
+    
+    <h1 id="recetas">Recetas de los Restaurantes</h1>
+
+    <h1>Maido</h1>
+    <ul> 
+      <li>Asado de tira (short rib de res), suficiente para 4 porciones (unos 1.2-1.5 kg)</li>
+      <li>Sal y pimienta al gusto</li>
+      <li>Ajo (varios dientes, machacados)</li>
+      <li>Cebolla picada fina</li>
+      <li>Shoyu (salsa de soja)</li>
+      <li>Mirin</li>
+      <li>Sake</li>
+      <li>Caldo de res (o agua con hueso de res)</li>
+      <li>Azúcar moreno o miel (opcional)</li>
+      <li>Aceite vegetal</li>
+    </ul>
+    <img src="WhatsApp Image 2025-09-24 at 3.04.47 PM (2).jpeg" alt="Plato Maido">  
+
+    <h1>Asador Etxebarri</h1>
+    <ul> 
   <li>Un chuletón de vaca vieja (Rubia Gallega), de al menos 1.2-1.5 kg, preferiblemente con hueso y grasa bien veteada, madurado unos 3-4 semanas si puedes</li>
   <li>Sal gruesa de mar o sal en escamas</li>
   <li>Madera para leña o brasas: troncos de vid o sarmientos, madera que dé aroma limpio, leña madura</li>
   <li>Carbón o brasas lo suficientemente calientes, preferiblemente hechas con la leña apropiada</li>
-</ul>
-<img src="chuleta-de-vaca.jpg">
-<h1>Quitonil</h1>
+  </ul>
+    <img src="WhatsApp Image 2025-09-24 at 3.04.47 PM (1).jpeg" alt="Chuletón Etxebarri">
+
+    <h1>Quintonil</h1>
 <ul>
     <li>Huauzontles limpios 400-500 </li>
     <li>Caldo vegetal claro 200-250 ml</li>
@@ -51,24 +151,53 @@
     <li>Aceite vegetal o de oliva suave para sofreír</li>
     <li>Hierbas aromáticas (cilantro, hoja santa o epazote)	al gusto para infusionar o decorar Opcionales</li>
 </ul>
-<img src="huauzontles-con-queso.jpg">
- <footer>
-        <p>©️ 2025 - Mi Blog de Recetas y de Restaurantes</p>
-</footer>
-         
-</body>
-</html>
+    <img src="WhatsApp Image 2025-09-24 at 3.04.47 PM.jpeg" alt="Huauzontles con queso">
 
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width
-    <title>Document</title>
-</head>
-<body>
     
+    <h1>🍽️ Platos Principales</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Plato</th>
+                <th>Ingredientes Principales</th>
+                <th>Origen</th>
+                <th>Precio (aprox.)</th>
+                <th>Picante</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Asado de tira (Maido)</td>
+                <td>Costillas de res, shoyu, mirin, sake, ajo, cebolla</td>
+                <td>Perú (fusión nikkei)</td>
+                <td>$35.000</td>
+                <td>🌶️🌶️ Moderado</td>
+            </tr>
+            <tr>
+                <td>Chuletón a la brasa (Etxebarri)</td>
+                <td>Chuletón de vaca vieja, sal marina, brasas de leña</td>
+                <td>España (País Vasco)</td>
+                <td>$45.000</td>
+                <td>🌶️ No picante</td>
+            </tr>
+            <tr>
+                <td>Huauzontles con queso (Quintonil)</td>
+                <td>Huauzontles, tomate, queso, crema, hierbas aromáticas</td>
+                <td>México</td>
+                <td>$25.000</td>
+                <td>🌶️🌶️🌶️ Picante</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <h1 id="contactos">📞 Contactos</h1>
+    <p style="text-align: center;">Si deseas más información o realizar una reserva, puedes escribirnos a:</p>
+    <p style="text-align: center;">✉️ <strong>info@saboresdelmundo.com</strong></p>
+    <p style="text-align: center;">📍 Lima - Perú | 📍 País Vasco - España | 📍 Ciudad de México</p>
+
+    <footer>
+        <p>©️ 2025 - Mi Blog de Recetas y de Restaurantes</p>
+    </footer>
 </body>
 </html>
